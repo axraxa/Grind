@@ -13,11 +13,9 @@ body{
   align-items: center;
 
   width: 250px;
-<<<<<<< HEAD
+
   height: 450px;
-=======
-  height: 400px;
->>>>>>> 86573d0 (linux updated)
+
   border-radius: 20px;
   cursor: pointer;
 
@@ -34,33 +32,28 @@ body{
   font-size: 25px;
   color: red;
   filter: drop-shadow(0 0 2px white );
-<<<<<<< HEAD
+
   margin-bottom: 10px;
 }
 
-.about{
-  font-size: 14px;
-=======
-}
+
 
 .about{
->>>>>>> 86573d0 (linux updated)
   padding: 0 10px;
   color: white;
   filter: drop-shadow(0 0 2px red);
   margin-top: 0;
   margin-bottom: 5px;
+  font-size: 14px;
 }
 
 .career{
   width: 6ch;
   box-sizing: content-box;
   
-<<<<<<< HEAD
+
   margin-bottom: 0px;
-=======
-  margin-top: 10px;
->>>>>>> 86573d0 (linux updated)
+
   padding: 10px 15px;
   border-radius: 3px;
 

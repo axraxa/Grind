@@ -26,15 +26,12 @@
   align-items: center;
 
   margin: 0 0 10px 0;
-<<<<<<< HEAD
 
   padding-left: auto;
   padding-right: auto;
-=======
->>>>>>> 86573d0 (linux updated)
 }
 
-.line > p{
+.line > p {
   font-size: 25px;
   font-weight: 1000;
 }
@@ -57,23 +54,17 @@
   color: black;
 }
 
-<<<<<<< HEAD
 .eemail{
   margin-bottom: 0;
-=======
-.line:has(.eemail){
-  margin-bottom: -10px;
->>>>>>> 86573d0 (linux updated)
+
 }
 
 .signupclub{
   color: red;
   width: 180px;
-<<<<<<< HEAD
+
   margin-bottom: 0;
-=======
-  margin-bottom: 20px;
->>>>>>> 86573d0 (linux updated)
+
   margin-top: 10px;
 }
 
