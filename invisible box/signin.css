@@ -1,0 +1,154 @@
+body{
+  background-color: rgb(16, 170, 170);
+  font-family: caveat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: red;
+  }
+
+::selection{
+  color: rgb(47, 228, 228);
+  background-color: red;
+}
+
+.mainbox{
+  display: flex;
+  flex-direction: column;
+  
+  position: relative;
+  
+
+  width: 350px;
+  height: 450px;
+
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.mainbox > * {
+  color: red;
+}
+
+.tag{
+  margin-left: 30px;
+  margin-bottom: 0px;
+}
+
+.email{
+  width: 80%;
+  height: 30px;
+  margin: 5px auto 20px auto;
+
+  border-radius: 5px;
+  background-color: rgb(40, 255, 255);
+  outline: none;
+  border: 2px solid red;
+  padding: 10px ;
+
+  font-size: 1.2em;
+  color: black;
+}
+
+.email::placeholder{
+  color: black;
+}
+
+.join{
+  font-size: 1.8em;
+  font-family: caveat;
+  font-weight: bold;
+
+  width: 150px;
+  margin: auto ;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 0, 0, 1);
+  background-color: rgb(47, 228, 228);
+
+  cursor: pointer;
+  
+  transition: background-color 0.2s ease-in,color 0.2s ease-in ,border 0.2s ease-in;
+}
+
+.join:hover{
+  background-color: red;
+  color: rgb(47, 228, 228);
+  border: 2px solid rgba(47, 228, 228, 1);
+}
+
+.sign-up{
+  text-align: center;
+  margin-top: 0;
+}
+
+.sign-up:hover{
+  color: rgb(47, 228, 228);
+  filter: drop-shadow(0 0 5px red);
+}
+
+/* background objects */
+
+.first-object{
+  position: fixed;
+  left: 39%;
+  top: 35%;
+
+
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: yellow;
+
+  z-index: -1;
+}
+
+.second-object{
+  position: fixed;
+  left: 55%;
+  top: 25%;
+
+  scale: 1.2;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: wheat;
+
+  z-index: -1;
+}
+
+.third-object{
+  position: fixed;
+  left: 42%;
+  top: 60%;
+
+  scale: 0.9;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: greenyellow;
+
+  z-index: -1;
+}
+
+/* objects end */
+
+
+
+@media (max-width: 750px){
+  .first-object{
+    left: 15%;
+  }
+
+  .second-object{
+    left: 60%;
+  }
+}

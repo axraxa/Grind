@@ -1,0 +1,103 @@
+.box{
+  display: flex;
+  flex-direction: column;
+  
+  position: relative;
+  
+
+  width: 350px;
+  height: 450px;
+
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+.line{
+  display: flex;
+  width: 90%;
+  align-items: center;
+
+  margin: 0 0 10px 0;
+<<<<<<< HEAD
+
+  padding-left: auto;
+  padding-right: auto;
+=======
+>>>>>>> 86573d0 (linux updated)
+}
+
+.line > p{
+  font-size: 25px;
+  font-weight: 1000;
+}
+
+.lineinput{
+  height: 20px;
+  width: 91%;
+  padding: 0;
+  margin-left: 10px;
+  
+
+  border-radius: 5px;
+  background-color: rgb(40, 255, 255);
+  outline: none;
+  border: 2px solid red;
+  padding: 5px ;
+}
+
+.lineinput::placeholder{
+  color: black;
+}
+
+<<<<<<< HEAD
+.eemail{
+  margin-bottom: 0;
+=======
+.line:has(.eemail){
+  margin-bottom: -10px;
+>>>>>>> 86573d0 (linux updated)
+}
+
+.signupclub{
+  color: red;
+  width: 180px;
+<<<<<<< HEAD
+  margin-bottom: 0;
+=======
+  margin-bottom: 20px;
+>>>>>>> 86573d0 (linux updated)
+  margin-top: 10px;
+}
+
+.signupclub > a{
+  text-decoration: none;
+  color: red;
+}
+
+.signupclub:hover a {
+  color: rgb(47, 228, 228);
+}
+
+
+.checkbox{
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.checkboxline{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+input[type="checkbox"]{
+  accent-color: rgb(16, 170, 170);
+}
