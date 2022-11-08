@@ -20,29 +20,31 @@
 
 <body>
 
-  <div class="box">
+  <form action="index.html" class="box">
     <h1 style="text-align: center; font-family: caveat;">Dallas Buyers Club</h1>
 
 
     <div class="line eemail">
       <p>Email</p>
-      <input type="email" placeholder="user.example@gmail.com" class="lineinput">
+      <input type="email" placeholder="user.example@gmail.com" class="lineinput" required>
 
     </div>
 
     <div class="line">
       <p style="font-size: 15px;">Password</p>
-      <input type="password" placeholder="At least 6 characters" class="lineinput">
+      <input type="password" placeholder="At least 6 characters" class="lineinput"
+      minlength="6" maxlength="20" required>
     </div>
 
     <div class="line">
       <p style="font-size: 15px;">Password</p>
-      <input type="password" placeholder="Repeat Your Password" class="lineinput">
+      <input type="password" placeholder="Repeat Your Password" class="lineinput"
+      minlength="6" maxlength="20" required>
     </div>
 
     <div class="line" style="margin-bottom: 0;">
       <p style="font-size: 15px;">BirthDay</p>
-      <input type="date" class="lineinput">
+      <input type="date" class="lineinput" min="1900-01-01" max="2004-12-31" required>
     </div>
 
     <div class="line checkboxline">
@@ -64,11 +66,11 @@
       </div>
     </div>
 
-    <button class="join signupclub">
-      <a href="index.html"> Sign up in Club </a>
-    </button>
 
-  </div>
+    <input type="submit" value="Sign up in Club" class="join signupclub">
+    
+
+  </form>
 
   <div class="first-object"></div>
   <div class="second-object"></div>

@@ -63,15 +63,11 @@
   color: red;
   width: 180px;
 
-  margin-bottom: 0;
+  margin-bottom: 10px;
 
-  margin-top: 10px;
 }
 
-.signupclub > a{
-  text-decoration: none;
-  color: red;
-}
+
 
 .signupclub:hover a {
   color: rgb(47, 228, 228);
