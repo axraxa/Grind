@@ -1,17 +1,17 @@
 body{
-  background-color: rgb(16, 170, 170);
-  font-family: caveat;
+  background-color: rgb(0, 0, 0);
+  font-family: raleway;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
-  color: red;
+  color: yellow;
   }
 
 ::selection{
-  color: rgb(47, 228, 228);
-  background-color: red;
+  color: black;
+  background-color: yellow;
 }
 
 .mainbox{
@@ -25,9 +25,9 @@ body{
   height: 450px;
 
 
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  border: 1px solid rgba(255, 0, 0, 0.5);
+  border: 1px solid rgba(255, 251, 0, 0.8);
   backdrop-filter: blur(5px);
 
   margin-left: auto;
@@ -35,7 +35,7 @@ body{
 
 }
 .mainbox > * {
-  color: red;
+  color: yellow;
 }
 
 .tag{
@@ -49,30 +49,29 @@ body{
   margin: 5px auto 20px auto;
 
   border-radius: 5px;
-  background-color: rgb(40, 255, 255);
+  background-color: rgb(0, 0, 0);
   outline: none;
-  border: 2px solid red;
+  border: 2px solid yellow;
   padding: 10px ;
 
-  font-size: 1.2em;
+  font-size: 1em;
   color: black;
 }
 
 .email::placeholder{
-  color: black;
+  color: rgb(255, 251, 0);
 }
 
 .join{
-  font-size: 1.8em;
-  font-family: caveat;
+  font-size: 1.1em;
   font-weight: bold;
 
   width: 150px;
   margin: auto ;
   padding: 10px;
   border-radius: 10px;
-  border: 2px solid rgba(255, 0, 0, 1);
-  background-color: rgb(47, 228, 228);
+  border: 2px solid rgb(255, 251, 0);
+  background-color: rgb(0, 0, 0);
 
   cursor: pointer;
   
@@ -80,19 +79,22 @@ body{
 }
 
 .join:hover{
-  background-color: red;
-  color: rgb(47, 228, 228);
-  border: 2px solid rgba(47, 228, 228, 1);
+  background-color: rgb(255, 251, 0);
+  color: black;
+  border: 2px solid black;
 }
 
 .sign-up{
-  text-align: center;
+  width: 120px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .sign-up:hover{
-  color: rgb(47, 228, 228);
-  filter: drop-shadow(0 0 5px red);
+  color: rgb(0, 0, 0);
+  filter: drop-shadow(0 0 5px rgb(255, 251, 0));
 }
 
 /* background objects */
@@ -105,8 +107,8 @@ body{
 
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  background-color: yellow;
+  border-radius: 40%;
+  background-color: pink;
 
   z-index: -1;
 }
@@ -120,7 +122,7 @@ body{
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-color: wheat;
+  background-color: rgb(255, 166, 0);
 
   z-index: -1;
 }
@@ -128,17 +130,30 @@ body{
 .third-object{
   position: fixed;
   left: 42%;
-  top: 60%;
+  top: 65%;
 
   scale: 0.9;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 15%;
   background-color: greenyellow;
 
   z-index: -1;
 }
 
+.fourth-object{
+  position: fixed;
+  left: 52%;
+  top: 65%;
+
+  scale: 0.9;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgb(255, 47, 47);
+
+  z-index: -1;
+}
 /* objects end */
 
 
@@ -150,5 +165,9 @@ body{
 
   .second-object{
     left: 60%;
+  }
+
+  .third-object{
+    left: 10%;
   }
 }
