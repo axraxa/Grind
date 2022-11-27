@@ -67,8 +67,8 @@ game.addEventListener("click",function(e){
 document.querySelector(".clear").addEventListener("click",function(e){
     atribute = e.target.getAttribute("class");
     if(atribute == "clear"){
-        count = 0;
-        countPc = 0;
+        document.querySelector(".count").innerText = `Your Score : ${count = 0}`;
+        document.querySelector(".count-pc").innerText = `Computer Score : ${countPc = 0}`;
     }
 })
 
