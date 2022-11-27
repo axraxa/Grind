@@ -15,10 +15,10 @@ game.addEventListener("click",function(e){
     //getting atribute 
     const atribute = target.getAttribute("class");
     const randomed = pc[pcChoice].alt;
-
+    const id = target.getAttribute("id");
     //middle text
     const rolled = `You did ${atribute} VS ${randomed}`;
-    if(atribute != "clear"){
+    if(atribute != "clear" && id == "RPC"){
     document.querySelector(".rolled").innerText = rolled;
     }
 
@@ -69,6 +69,7 @@ document.querySelector(".clear").addEventListener("click",function(e){
     if(atribute == "clear"){
         document.querySelector(".count").innerText = `Your Score : ${count = 0}`;
         document.querySelector(".count-pc").innerText = `Computer Score : ${countPc = 0}`;
+        document.querySelector(".rolled").innerText = null;
     }
 })
 
