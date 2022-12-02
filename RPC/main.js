@@ -25,24 +25,20 @@ game.addEventListener("click",function(e){
     // here goes hell kinda. 
     if(atribute == "Rock"){
         if(randomed == "Scissors"){
-            document.querySelector(".count").innerText = `Your Score : ${count + 1}`;  // counters.
             count ++;
         }
         if(randomed == "Rock"){
             count = count;
         }
         if(randomed == "Paper"){
-            document.querySelector(".count-pc").innerText = `Computer Score : ${countPc + 1}`;
             countPc ++;
         }
     }
     if(atribute == "Paper"){
         if(randomed == "Scissors"){
-            document.querySelector(".count-pc").innerText = `Computer Score : ${countPc + 1}`;
             countPc ++;
         }
         if(randomed == "Rock"){
-            document.querySelector(".count").innerText = `Your Score : ${count + 1}`;
             count ++;
         }
         if(randomed == "Paper"){
@@ -54,14 +50,14 @@ game.addEventListener("click",function(e){
             count= count;
         }
         if(randomed == "Rock"){
-            document.querySelector(".count-pc").innerText = `Computer Score : ${countPc + 1}`;
             countPc ++;
         }
         if(randomed == "Paper"){
-            document.querySelector(".count").innerText = `Your Score : ${count + 1}`;
             count ++;
         }
     }
+    document.querySelector(".count").innerText = `Your Score : ${count}`;
+    document.querySelector(".count-pc").innerText = `Computer Score : ${countPc}`;
 });
 
 document.querySelector(".clear").addEventListener("click",function(e){
