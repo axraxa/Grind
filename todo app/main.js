@@ -36,6 +36,7 @@ function addTodo(){
     //adding div before input in the box
     if(input.value != ""){
         box.insertBefore(div, box.lastElementChild);
+        document.getElementById("sound").play();
     }
 }
 
