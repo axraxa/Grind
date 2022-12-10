@@ -76,3 +76,31 @@ input[type="radio"]:checked ~ p {
     font-weight: bold;
     font-size: 1rem;
 }
+
+
+#cross{
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#cross:hover::after,
+#cross:hover::before{
+    background-color: red;
+}
+
+#cross::after,
+#cross::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background-color: gray;
+}
+
+#cross::after{
+    rotate: 45deg;
+}
+#cross::before{
+    rotate: -45deg;
+}

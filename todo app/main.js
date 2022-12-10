@@ -21,6 +21,17 @@ function addTodo(){
     text.innerText = `${upperCase}`;
     div.appendChild(text);
 
+    const x = document.createElement("div");
+    x.setAttribute("id","cross");
+    div.appendChild(x);
+
+    if (x) {
+        x.addEventListener('click', function() {
+            div.remove();
+        });
+    } else {
+            console.error('No x');
+    }
 
     //adding div before input in the box
     if(input.value != ""){
