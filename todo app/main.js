@@ -38,5 +38,7 @@ function addTodo(){
         box.insertBefore(div, box.lastElementChild);
         document.getElementById("sound").play();
     }
+
+    input.value = null;
 }
 
