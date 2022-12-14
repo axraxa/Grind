@@ -13,6 +13,7 @@ body{
 .box{
     display: flex;
     flex-direction: column;
+    position: relative;
 
     align-items: center;
     justify-content: center;
@@ -23,15 +24,25 @@ body{
 
     border-radius: 20px;
     
+    overflow: hidden;
 }
 
+.another{
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+
+}
 
 .line{
     display: flex;
     flex-direction: row;
 
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+
+    width: 100%;
 
     border-bottom : 1px solid gray;
 }
@@ -43,6 +54,7 @@ input[type="radio"]{
     width: 16px;
     height: 16px;
 
+    color-interpolation-filters: linearRGB;
 }
 
 input[type="radio"]:checked ~ p {
@@ -64,7 +76,8 @@ input[type="radio"]:checked ~ p {
     font-size: 1rem;
 }
 
-.userinputAdd{
+.userinputAdd,
+.userinputRemove{
     border-radius: 5px;
     padding: 5px 10px 5px 10px;
 
@@ -104,3 +117,55 @@ input[type="radio"]:checked ~ p {
 #cross::before{
     rotate: -45deg;
 }
+
+
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: gray;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+    
+}
+
+input[type='radio']:checked:after {
+
+    background-color: aquamarine;
+    border: 2px solid white;
+}
+
+
+
+
+.alert{
+    width: 250px;
+    height: 50px;
+    top: 0;
+    left: -300px;
+
+    background-color: rgb(240, 110, 110);
+    color: white;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+
+    transition: 0.5s;
+}
+
+.popup{
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
