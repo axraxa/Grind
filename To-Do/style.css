@@ -46,9 +46,11 @@ body{
 
     width: 100%;
 
-    border-bottom : 1px solid gray;
+    border-top : 1px solid gray;
 }
-
+.without{
+    border-top: none;
+}
 
 input[type="radio"]{
     cursor: pointer;

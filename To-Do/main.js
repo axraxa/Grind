@@ -71,12 +71,21 @@ function renderTodo() {
     }
 
     todos.forEach((todo, index) => {
+        if(index >0){
         sum.innerHTML += `<div class="line" id="${index}">
         <input type="radio" id="${index}" data-action="check" ${todo.done ? "checked" : ""}>
         <p data-action="check" style="cursor:pointer;"> ${todo.name} <p>
         <div id="cross" data-action="delete"></div>
         </div>
         `;
+        }else{
+            sum.innerHTML += `<div class="line without" id="${index}">
+        <input type="radio" id="${index}" data-action="check" ${todo.done ? "checked" : ""}>
+        <p data-action="check" style="cursor:pointer;"> ${todo.name} <p>
+        <div id="cross" data-action="delete"></div>
+        </div>
+        `;
+        }
     });
     localStorage.setItem("To-Do", JSON.stringify(todos));
 }
