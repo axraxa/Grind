@@ -79,7 +79,7 @@ function renderTodo() {
         </div>
         `;
         }else{
-            sum.innerHTML += `<div class="line without" id="${index}">
+            sum.innerHTML += `<div class="line" id="${index}" style="border-top: none;">
         <input type="radio" id="${index}" data-action="check" ${todo.done ? "checked" : ""}>
         <p data-action="check" style="cursor:pointer;"> ${todo.name} <p>
         <div id="cross" data-action="delete"></div>
