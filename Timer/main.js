@@ -68,6 +68,7 @@ function restart() {
 
     //reseting play button
     play.src = "stopwatch.svg";
+    playing = false;
 
     //reseting timer
     count = 0;
