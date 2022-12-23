@@ -1,0 +1,260 @@
+body{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 100vh;
+
+    overflow-x:hidden;
+    margin: 0;
+
+    align-items: center;
+
+    font-family: 'Space Grotesk', sans-serif;
+
+    background-color: black;
+    color: white;
+}
+p {
+    z-index: 99;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+input{
+    height: 2rem;
+    font-size: 20px;
+    outline: none;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    column-gap: 100px;
+}
+
+/* globals finished` */
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.frontBox,
+.backBox{
+    position: relative;
+    margin: 0;
+}
+.back{
+    position: inherit;
+    left: 40px;
+}
+
+.icon{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.numbers,
+.Name{
+    position: absolute;
+    left: 25px;
+}
+
+.numbers{
+    bottom: 20px;
+    width: calc(100% - 40px); 
+    
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+}
+
+.Name{
+    bottom: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.Date{
+    right: 35px;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    bottom: 5px;
+}
+
+.CVC{
+    right: 5px;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    top: 95px;
+}
+
+
+
+/* form css */
+
+.credit{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    position: relative;
+
+    width: 500px;
+    min-width: 250px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.lasts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 20px;
+   
+    position: relative;
+}
+#mm,
+#yy{
+    width: 50px;
+}
+.confirm-button{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 0 10px 0 ;
+    cursor: pointer;
+    background-color: purple;
+    color: white;
+    border-style: none;
+}
+
+
+
+/* alerts positioning */
+
+.nameAlert,
+.numberAlert,
+.cvcAlert,
+.monthAlert,
+.yearAlert{
+    position: absolute;
+    color: red;
+    translate: 5000px 0;
+}
+
+.nameAlert{
+    top: 50px;
+}
+.numberAlert{
+    top: 128px;
+}
+
+.monthAlert,
+.yearAlert,
+.cvcAlert{
+    bottom: -35px;
+}
+
+.yearAlert{
+    left: 105px;
+}
+.cvcAlert{
+right: 0px;
+}
+
+/* checked css */
+.checked{
+    display: none;
+    flex-direction: column;
+    row-gap: 10px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+    width: 500px;
+    min-width: 250px;
+}
+
+.continue{
+    margin-top: 10px;
+    width: 80%;
+    padding: 10px 0 10px 0 ;
+    cursor: pointer;
+    background-color: purple;
+    color: white;
+    border-style: none;
+    border-radius: 20px;
+}
+
+/* mobile version  / tablet too */
+
+@media (max-width : 1000px){
+    .section{
+        flex-direction: column;
+        width: 90%;
+    }
+    .credit{
+        width: 100%;
+    }
+    input{
+        width: 100%;
+    }
+    .card{
+        width: 350px;
+    }
+    .front,
+    .back{
+        width: 90%;
+    }
+    .backBox{
+        left: 0;
+        top: -300px;
+    }
+    .CVC{
+        right: 30px;
+        top: 60px;
+    }
+    .frontBox{
+        z-index: 200;
+    }
+    .Date{
+        right: 50px;
+    }
+    .numbers{
+        font-size: 22px;
+    }
+    .card{
+        margin-top: 100px;
+        margin-bottom: 0;
+    }
+    .Name{
+        font-size: 0.8rem;
+        bottom: 10px;
+    }
+    .credit
+    ,.checked{
+        margin: 0;
+        position: relative;
+        top: -150px;
+    }
+    .continue{
+        width: 60%;
+    }
+    .yearAlert{
+        left: 80px;
+    }
+    
+}

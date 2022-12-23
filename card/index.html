@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="section">
+        <!-- img -->
+        <div class="card">
+            <div class="frontBox">
+                <img src="aaa/images/bg-card-front.png" alt="" class="front">
+                <img src="aaa/images/card-logo.svg" alt="" class="icon">
+                <p class="numbers">0000 0000 0000 0000</p>
+                <p class="Name">Your Name</p>
+                <p class="Date">00/00</p>
+            </div>
+
+            <div class="backBox">
+                <img src="aaa/images/bg-card-back.png" alt="" class="back">
+                <p class="CVC">000</p>
+            </div>
+        </div>
+
+        <!-- inputs here -->
+        <form class="credit">
+            <label for="name">CARDHOLDER NAME</label>
+            <input type="text"  id="name" placeholder="e.g.Jemal Qarchxadze" onkeyup="initials()">
+            <p class="nameAlert">test</p>
+
+            <label for="number">CARD NUMBER</label>
+            <input type="number"  id="number" placeholder="e.g.1234 1234 1234 1234" onkeyup="changingNumbers()">
+            <p class="numberAlert">test</p>
+
+            <div class="lasts">
+                <label for="mm yy">EXP.DATE[MM/YY]</label>
+                <label for="cvc">CVC</label>
+            </div>
+            <div class="lasts">
+                <p class="monthAlert">test</p>
+                <p class="yearAlert">test</p>
+                <p class="cvcAlert">test</p>
+
+                <input type="number" id="mm" placeholder="MM" onkeyup="dateDeclare()">
+                <input type="number" id="yy" placeholder="YY" onkeyup="dateDeclare()">
+                <input type="number" id="cvc" placeholder="e.g.123" onkeyup="cvcDeclare()">
+            </div>
+            <button class="confirm-button">Confirm</button>
+        </form>
+
+        <div class="checked">
+            <img src="aaa/images/icon-complete.svg" alt="">
+            <h1 style="color: white;margin: 0;">Thank You!</h1>
+            <p style="color:purple;margin: 0;">We've added your card details</p>
+            <button class="continue" onclick="continueBtn()">Continue</button>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
