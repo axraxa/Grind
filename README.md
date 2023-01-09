@@ -1,4 +1,4 @@
-#Access this files easily (Host links)  
+#Access this files easily (links)  
 https://axraxa.github.io/Grind/RPC/  
 https://axraxa.github.io/Grind/Timer  
 https://axraxa.github.io/Grind/To-Do  
