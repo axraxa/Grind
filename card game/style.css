@@ -55,3 +55,11 @@ img{
 
     position: absolute;
 }
+
+
+
+@media (max-width: 700px){
+    .container{
+        width: 90%;
+    }
+}
