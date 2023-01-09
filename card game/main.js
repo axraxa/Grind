@@ -76,7 +76,7 @@ const cardData = [
             card: "cards/warlock.png"
         },
         {
-            card: "cards/warrior.png"
+            card: "cards/mage.png"
         },
         {
             card: "cards/mage.png"
