@@ -153,10 +153,8 @@ mainContainer.addEventListener("click", (e) => {
         target.style.display = "none";
         if (count == 1) {
             firstChoice = gameCard;
-            console.log(firstChoice.firstElementChild.src)
         } else {
             secondChoice = gameCard;
-            console.log(secondChoice)
         }
     }
 
