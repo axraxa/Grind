@@ -129,6 +129,7 @@ let firstChoice;
 let secondChoice;
 
 let count = 0;
+let resetCount = 0;
 
 window.onload = () => {
     cardData[Math.floor(Math.random() * 2)].forEach((card, index) => {
@@ -159,7 +160,7 @@ mainContainer.addEventListener("click", (e) => {
     }
 
     if (secondChoice != undefined && firstChoice.firstElementChild.src == secondChoice.firstElementChild.src) {
-        setTimeout(function (){
+        setTimeout(function () {
             secondChoice.style.opacity = "0"
             firstChoice.style.opacity = "0"
             secondChoice.firstElementChild.style.opacity = "0"
@@ -169,8 +170,102 @@ mainContainer.addEventListener("click", (e) => {
             firstChoice = "";
             secondChoice = "";
             count = 0;
-        },700)
-        
+            resetCount++;
+            if (resetCount == 10) {
+                setTimeout(function () {
+                    // resets entire html content
+                    mainContainer.innerHTML = `<div class="cardholder">
+                <img src="" id="0" draggable="false">
+                <img src="cards/cardholder.jpg" class="card" draggable="false">
+            </div>
+            <div class="cardholder">
+                <img src="" id="1" draggable="false">
+                <img src="cards/cardholder.jpg" class="card" draggable="false">
+            </div>
+            <div class="cardholder">
+                <img src="" id="2" draggable="false">
+                <img src="cards/cardholder.jpg" class="card" draggable="false">
+            </div>
+            <div class="cardholder">
+                <img src="" id="3" draggable="false">
+                <img src="cards/cardholder.jpg" class="card" draggable="false">
+            </div>
+            <div class="cardholder">
+                <img src="" id="4" draggable="false">
+                <img src="cards/cardholder.jpg" class="card" draggable="false">
+            </div>
+            <div class="cardholder">
+                <img src="" id="5" draggable="false">
+                <img src="cards/cardholder.jpg" class="card" draggable="false">
+            </div>
+            <div class="cardholder">
+                <img src="" id="6" draggable="false">
+                <img src="cards/cardholder.jpg" class="card" draggable="false">
+            </div>
+            <div class="cardholder">
+                <img src="" id="7" draggable="false">
+                <img src="cards/cardholder.jpg" class="card" draggable="false">
+            </div>
+            <div class="cardholder">
+                <img src="" id="8" draggable="false">
+                <img src="cards/cardholder.jpg" class="card" draggable="false">
+            </div>
+            <div class="cardholder">
+                <img src="" id="9" draggable="false">
+                <img src="cards/cardholder.jpg" class="card" draggable="false">
+            </div>
+            <div class="cardholder">
+                <img src="" id="10" draggable="false">
+                <img src="cards/cardholder.jpg" class="card" draggable="false">
+            </div>
+            <div class="cardholder">
+                <img src="" id="11" draggable="false">
+                <img src="cards/cardholder.jpg" class="card" draggable="false">
+            </div>
+            <div class="cardholder">
+                <img src="" id="12" draggable="false">
+                <img src="cards/cardholder.jpg" class="card" draggable="false">
+            </div>
+            <div class="cardholder">
+                <img src="" id="13" draggable="false">
+                <img src="cards/cardholder.jpg" class="card" draggable="false">
+            </div>
+            <div class="cardholder">
+                <img src="" id="14" draggable="false">
+                <img src="cards/cardholder.jpg" class="card" draggable="false">
+            </div>
+            <div class="cardholder">
+                <img src="" id="15" draggable="false">
+                <img src="cards/cardholder.jpg" class="card" draggable="false">
+            </div>
+            <div class="cardholder">
+                <img src="" id="16" draggable="false">
+                <img src="cards/cardholder.jpg" class="card" draggable="false">
+            </div>
+            <div class="cardholder">
+                <img src="" id="17" draggable="false">
+                <img src="cards/cardholder.jpg" class="card" draggable="false">
+            </div>
+            <div class="cardholder">
+                <img src="" id="18" draggable="false">
+                <img src="cards/cardholder.jpg" class="card" draggable="false">
+            </div>
+            <div class="cardholder">
+                <img src="" id="19" draggable="false">
+                <img src="cards/cardholder.jpg" class="card" draggable="false">
+            </div>`;
+
+                    cardData[Math.floor(Math.random() * 2)].forEach((card, index) => {
+                        const gameCard = document.getElementById(`${index}`);
+                        gameCard.src = `${card.card}`;
+                        gameCard.setAttribute("class", "test");
+                    })
+
+                    resetCount = 0;
+                }, 300)
+            }
+        }, 700)
+
     } else if (secondChoice != undefined && firstChoice.firstElementChild.src != secondChoice.firstElementChild.src) {
 
         setTimeout(function () {
@@ -181,6 +276,4 @@ mainContainer.addEventListener("click", (e) => {
             count = 0;
         }, 700)
     }
-
-
 })
