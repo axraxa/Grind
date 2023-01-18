@@ -3,7 +3,13 @@ const minutes = document.querySelector(".minutes");
 const seconds = document.querySelector(".seconds");
 const play = document.querySelector(".play-stop");
 const reset = document.querySelector(".reset");
+const container = document.querySelector(".container");
 
+const sound = document.querySelector(".time-is-up")
+
+const submit = document.querySelector(".submit-btn");
+const inputed = document.querySelector(".user-input");
+const userContainer = document.querySelector(".question");
 // vars for reseting or resume/stopping started interval.
 var timerStarted;
 let playing = false;
@@ -12,6 +18,26 @@ let playing = false;
 let count = 0;
 let minutesCount = 0;
 let hourCount = 0;
+
+let pomodoroSession;
+
+// storing pomodoro session duration
+
+submit.addEventListener("click", function (e) {
+    if (inputed.value == "") {
+        alert("Pomodoro session duration set to default 25min value.")
+        pomodoroSession = 25;
+        container.style.display = "flex";
+        userContainer.style.display = "none";
+    } else if (parseInt(inputed.value) > 60 || parseInt(inputed.value) < 25) {
+        alert("Each Pomodoro session is no longer than 60 minute and no shorter than 25min.");
+        inputed.value = 25;
+    } else if (parseInt(inputed.value) <= 60) {
+        pomodoroSession = parseInt(inputed.value);
+        container.style.display = "flex";
+        userContainer.style.display = "none";
+    }
+})
 
 // 👇 finished timer logic
 function timer() {
@@ -45,6 +71,22 @@ function timer() {
         seconds.innerText = "0" + count;
     } else {
         seconds.innerText = `${count}`;
+    }
+
+    if(pomodoroSession === 60 && hourCount === 1){
+        sound.play();
+        setTimeout(() => {
+            sound.stop();
+            sound.play();
+        },3000)
+        restart();
+    }else if(pomodoroSession == minutesCount){
+        sound.play();
+        setTimeout(() => {
+            sound.stop();
+            sound.play();
+        },3000)
+        restart();
     }
 }
 
