@@ -1,6 +1,6 @@
 #Access this files easily (links)  
 https://axraxa.github.io/Grind/RPC/  
-https://axraxa.github.io/Grind/Pomodoro-timer    
+https://axraxa.github.io/Grind/Pomodoro-Timer    
 https://axraxa.github.io/Grind/To-Do  
 https://axraxa.github.io/Grind/Toggle  
 https://axraxa.github.io/Grind/bank  
