@@ -132,11 +132,13 @@ let count = 0;
 let resetCount = 0;
 
 window.onload = () => {
-    cardData[Math.floor(Math.random() * 2)].forEach((card, index) => {
-        const gameCard = document.getElementById(`${index}`);
-        gameCard.src = `${card.card}`;
-        gameCard.setAttribute("class", "test");
-    })
+    setTimeout(() => {
+        cardData[Math.floor(Math.random() * 2)].forEach((card, index) => {
+            const gameCard = document.getElementById(`${index}`);
+            gameCard.src = `${card.card}`;
+            gameCard.setAttribute("class", "test");
+        })
+    }, 500)
 }
 
 const deckCard = document.querySelectorAll(".card");
