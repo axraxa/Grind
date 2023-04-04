@@ -7,7 +7,7 @@ https://axraxa.github.io/Grind/bank
 https://axraxa.github.io/Grind/card%20game  
 https://axraxa.github.io/Grind/card  
 https://axraxa.github.io/Grind/css-slider-about-parrots  
-https://axraxa.github.io/Grind/dallasbuyers-club  
+https://axraxa.github.io/Grind/dallasbuyers -club  
 https://axraxa.github.io/Grind/first  
 https://axraxa.github.io/Grind/getlocation  
 https://axraxa.github.io/Grind/imghover  
