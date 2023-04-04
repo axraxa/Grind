@@ -4,7 +4,7 @@ https://axraxa.github.io/Grind/Pomodoro-Timer
 https://axraxa.github.io/Grind/To-Do  
 https://axraxa.github.io/Grind/Toggle  
 https://axraxa.github.io/Grind/bank  
-https://axraxa.github.io/Grind/card%20game  
+https://axraxa.github.io/Grind/card-game  
 https://axraxa.github.io/Grind/card  
 https://axraxa.github.io/Grind/css-slider-about-parrots  
 https://axraxa.github.io/Grind/dallasbuyers%20-club  
