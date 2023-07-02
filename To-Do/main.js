@@ -21,7 +21,7 @@ function todoMaker() {
 }
 
 
-// adds user input value in object and pushes into line 7
+// adds user input value in object and pushes into line 9
 function addTodo() {
     const upperCase = input.value.split(" ").map(word =>
         word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
